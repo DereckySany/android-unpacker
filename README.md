@@ -1,24 +1,25 @@
-android-unpacker
-================
+# Android-Unpacker
 
-Android Unpacker presented at Defcon 22: Android Hacker Protection Level 0
+### Android Unpacker apresentado no Defcon 22: Android Hacker Protection Level 0
 
-Contents
---------
+## Conteúdo
+- AHPL0 
+-> Android Hacker Protection Level 0 + alguns slides de blackphone.
+- gdb-scripts 
+-> script Bash para descompactar bangcle/secshell; requer `gdb/adb`.
+- native-unpacker 
+-> Unpacker para APKProtect/Bangcle/LIAPP/Qihoo Packer que roda nativamente, sem dependência de `gdb`.
+- hide-qemu 
+-> Pequenos hacks para esconder o qemu/debuggers, especificamente do APKProtect.
+- corellium-android-unpacking 
+-> Uma abordagem mais realista para descompactar coisas, dinamicamente e com automação em torno disso.
 
- - AHPL0 - Android Hacker Protection Level 0 + some blackphone stuff slides
- - gdb-scripts/ - Bash script for unpacking bangcle/secshell; requires gdb/adb
- - native-unpacker/ - Unpacker for APKProtect/Bangcle/LIAPP/Qihoo Packer that runs natively, no dependency on gdb
- - hide-qemu/ - Small hacks for hiding the qemu/debuggers, specifically from APKProtect
- - corellium-android-unpacking/ - A more realistic approach to unpacking things, dynamically and with automation around it
+## Isenção de responsabilidade
+Esta apresentação e código destinam-se apenas para fins de educação e pesquisa. Faça o que quiser com isso, mas aceite toda e qualquer responsabilidade por suas ações. As ferramentas foram criadas especificamente para auxiliar na reversão e análise de malware.
 
-Disclaimer
-----------
+`tenha cuidado`.
 
-This presentation and code are meant for education and research purposes only. Do as you please with it, but accept any and all responsibility for your actions. The tools were created specifically to assist in malware reversing and analysis - be careful.
-
-License
--------
+## License
 
     Copyright 2014-2020 Tim 'diff' Strazzere <diff@protonmail.com>
 
